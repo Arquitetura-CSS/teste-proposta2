@@ -3,14 +3,12 @@
 .nomearClasse1 {
 
     width: 25%;
-    margin-top: 20px;
+    margin-top: rem(20);
 
     .nomearClasse2 {
         background: $c-card-bg;
-        border-radius: rem(6) rem(6) rem(0) rem(0);    
-        border-color: $c-card-border;
-        border-style: solid;
-        border-width: rem(1);
+        border: rem(1) solid $c-card-border;
+        border-radius: rem(6) rem(6) 0 0;    
         padding: rem(20);
     }
 
@@ -20,10 +18,8 @@
     }
 
     .nomearClasse4 {
-        border-radius: rem(0) rem(0) rem(6) rem(6);    
-        border-color: $c-card-border;
-        border-style: solid;
-        border-width: rem(1);
+        border-radius: 0 0 rem(6) rem(6);
+        border: rem(1) solid $c-card-border;
         padding: rem(20);
     }
 
