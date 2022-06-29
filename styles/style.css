@@ -62,7 +62,7 @@ body {
   width: 25%;
   margin-top: 20px;
 }
-.nomearClasse1 .nomearClasse3 {
+.nomearClasse1 .nomearClasse2 {
   background: #eaeaea;
   border-radius: 0.375rem 0.375rem 0rem 0rem;
   border-color: #eaeaea;
@@ -70,11 +70,11 @@ body {
   border-width: 0.0625rem;
   padding: 1.25rem;
 }
-.nomearClasse1 .nomearClasse4 {
+.nomearClasse1 .nomearClasse3 {
   margin: 0;
   font-weight: bold;
 }
-.nomearClasse1 .nomearClasse5 {
+.nomearClasse1 .nomearClasse4 {
   border-radius: 0rem 0rem 0.375rem 0.375rem;
   border-color: #eaeaea;
   border-style: solid;
