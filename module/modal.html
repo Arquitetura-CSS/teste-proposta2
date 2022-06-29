@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="../styles/style.css" media="screen" />
+  <title>Arquitetura CSS com BEM e SMACSS - Proposta 2</title>
+</head>
+
+<body>
+  <section class="content">
+    <!-- Utilizado o segundo link do exemplo 6 da modal, Fonte: https://www.developerdrive.com/10-pure-css-modal-window-snippets/ -->
+
+    <h1 class="title">Modal</h1>
+
+    <p>
+      Esta modal vem de um 
+      <a href="https://css-components.felipefialho.com/#component-modal">pacote completo de soluções CSS</a> criadas pelo desenvolvedor Felipe Fialho.
+    </p>
+
+    <p>
+      O exemplo abaixo foi modificado para contemplar as estilizações do design da Nasajon:
+    </p>
+
+    <label class="button button--primary" for="u-connection__modal">
+      Acessar Modal
+    </label>
+
+    <div class="nomearClasse1 nomearClasse2">
+      <div class="nomearClasse3">
+        <h3 class="nomearClasse4">Título do card</h3>
+      </div>
+      <div class="nomearClasse5">
+          Conteúdo do card.
+      </div>
+    </div>
+
+    <!-- a dupla modal--open e u-connection__modal permitem chamar a modal usando o type="checkbox" |
+    o hidden="" oculta a visualização do checkbox, onde o type="checkbox" é usado para indicar que a .modal--open ao realizar um checked chama a modal e aplica as estilizações das classes: .modal .modal--overlay -->
+    <input class="modal--open" id="u-connection__modal" type="checkbox" hidden="">
+    
+    <!-- a classe modal permite a visualização da modal com o posicionamento da animação de transição -->
+    <div class="modal" aria-hidden="true" role="dialog">
+
+      <!-- permite sair da modal clicando para fora dela, qd comentado só sai da modal clicando no botão Ok |  -->
+      <label class="modal--overlay" for="u-connection__modal"></label> 
+
+      <!-- a classe modal__dialog mantém o conteúdo da modal oculto a página aguardando ser chamada além de aplicar a animação de transição de entrar em 0.6 segundos de cima para baixo -->
+      <div class="modal__dialog">
+
+        <div class="modal__header">
+          <h2 class="modal__title">
+            Exemplo de Modal
+          </h2>
+        </div>
+
+        <div class="modal__body">
+          <p>
+            Olá mundo, este é meu primeiro parágrafo em uma modal!
+          </p>
+        </div>
+
+        <div class="modal__footer">
+          <label class="button button--primary" for="u-connection__modal">
+            <i class="fas fa-check button__icon"></i>
+            Ok
+          </label>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </section>
+</body>
+
+</html>

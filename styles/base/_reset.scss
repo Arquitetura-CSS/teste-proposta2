@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: $default-font-size;
+}
+
+body {
+    color: $c-main-text;
+    font-family: $main-font;
+    font-size: rem(14);
+    line-height: rem(17);
+}

@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+.button {
+    border-radius: rem(4);    
+    border-color: $c-button-border;
+    border-style: solid;
+    border-width: rem(1);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    height: rem(34);
+    padding: rem(8) rem(12);
+    white-space: nowrap;
+
+    &--primary {
+        color: $c-button-text-primary;
+        background: $c-button-bg-primary;
+
+        &:hover {
+            color: $c-button-text-primary-hover;
+            background: $c-button-bg-primary-hover;
+            text-decoration: none;
+        }
+    }
+    
+    &__icon {
+        margin-bottom: rem(10);
+    }
+}
